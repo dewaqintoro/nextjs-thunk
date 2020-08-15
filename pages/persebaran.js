@@ -12,7 +12,7 @@ const { Header, Content, Footer, Sider } = Layout;
 import SideCompDew from './components/SideCompDew';
 
 import numeral from "numeral";
-import { InfoBoxku } from './components/infoBox';
+import InfoBoxku from './components/infoBox';
 import Tableku from './components/Table';
 import LineGraph from './components/LineGraph';
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, CardContent, Typography } from '@material-ui/core' 
 
 // ...props untuk import props onclick
-export const InfoBoxku = ({title,classN,cases,isRed,active,total,...props}) => {
+const InfoBoxku = ({title,classN,cases,isRed,active,total,...props}) => {
   return (
       <Card  
         onClick={props.onClick}
@@ -24,3 +24,5 @@ export const InfoBoxku = ({title,classN,cases,isRed,active,total,...props}) => {
       </Card>
   )
 }
+
+export default InfoBoxku
