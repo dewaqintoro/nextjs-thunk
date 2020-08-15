@@ -93,7 +93,7 @@ p#id{
   top: 200px;
   /* background: red; */
 }
- 
+
 .bawah{
   position: relative;
   display: flex;
@@ -120,6 +120,10 @@ p#id{
 img.imgBawah{
   width: 40px;
 }
+
+
+
+
 
 
 

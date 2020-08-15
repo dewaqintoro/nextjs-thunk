@@ -13,6 +13,10 @@ const Index = () => {
     dispatch(startClock())
   }, [dispatch])
 
+  // useEffect(() => {
+  //   console.log('window.innerHeight', window.innerHeight);
+  // })
+
   return (
     // <>
     //   <Examples />

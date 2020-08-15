@@ -167,7 +167,7 @@ p#income{
   top: 200px;
   /* background: red; */
 }
- 
+
 .bawah{
   position: relative;
   display: flex;
@@ -368,7 +368,7 @@ color: #000000;
 img#imgProfil{
   width: 94px;
 }
-
+ 
 img.imgBawah{
   width: 40px;
 }
