@@ -37,6 +37,88 @@ export const getCovidsList = () => {
   }
 } 
 
+export const getCovidIndo = () => {
+  return (dispatch) => {
+    axios.get('https://api.kawalcorona.com/indonesia/') 
+
+      .then(function (response) {
+        // console.log("action indo",response);
+        dispatch({
+          type: types.GET_COVID_INDO,
+          payload: {
+            data: response.data,
+            errorMessage: false
+          }
+        })
+      })
+      .catch(function (error) {
+        console.log(error);
+        dispatch({
+          type: types.GET_COVID_INDO,
+          payload: {
+            data: false,
+            errorMessage: error.message
+          }
+        })
+      })
+  }
+}
+
+export const getCovidPositif = () => {
+  return (dispatch) => {
+    axios.get('https://api.kawalcorona.com/positif') 
+
+      .then(function (response) {
+        console.log("action positif",response);
+        dispatch({
+          type: types.GET_COVID_POSITIF,
+          payload: {
+            data: response.data,
+            errorMessage: false
+          }
+        })
+      })
+      .catch(function (error) {
+        console.log(error);
+        dispatch({
+          type: types.GET_COVID_POSITIF,
+          payload: {
+            data: false,
+            errorMessage: error.message
+          }
+        })
+      })
+  }
+}
+
+
+export const getCovidSembuh = () => {
+  return (dispatch) => {
+    axios.get('https://api.kawalcorona.com/sembuh') 
+
+      .then(function (response) {
+        // console.log("action positif",response);
+        dispatch({
+          type: types.GET_COVID_SEMBUH,
+          payload: {
+            data: response.data,
+            errorMessage: false
+          }
+        })
+      })
+      .catch(function (error) {
+        console.log(error);
+        dispatch({
+          type: types.GET_COVID_SEMBUH,
+          payload: {
+            data: false,
+            errorMessage: error.message
+          }
+        })
+      })
+  }
+}
+
 // INITIALIZES CLOCK ON CLIENT
 export const startClock = () => (dispatch) =>
   setInterval(() => {

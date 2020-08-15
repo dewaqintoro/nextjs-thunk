@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import CardCompDew from '../components/CardCompDew'
 import { Card, Button, CardTitle, CardText } from 'reactstrap';
 // import CardIndo from '../components/CardIndo';
-
+ 
 
 const mapStateToProps = (state) =>{
   console.log("state cardContainer wadudu ",state)

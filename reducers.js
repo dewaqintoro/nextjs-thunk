@@ -57,6 +57,27 @@ const covidsReducer = (state = initialState, action) => {
         errorCovidsList: action.payload.errorMessage
       }
 
+    case types.GET_COVID_INDO:
+      return{
+        ...state,
+        getCovidIndo: action.payload.data,
+        errorCovidIndo: action.payload.errorMessage
+      }
+
+    case types.GET_COVID_POSITIF:
+      return{
+        ...state,
+        getCovidPositif: action.payload.data,
+        errorCovidPositif: action.payload.errorMessage
+      }
+
+    case types.GET_COVID_SEMBUH:
+      return{
+        ...state,
+        getCovidSembuh: action.payload.data,
+        errorCovidSembuh: action.payload.errorMessage
+      }
+
 
     default:
       return state

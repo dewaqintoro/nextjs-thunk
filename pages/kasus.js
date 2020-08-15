@@ -9,7 +9,7 @@ import SideCompDew from './components/SideCompDew';
  
 import { connect } from 'react-redux'
 import TableCompDew from './components/TableCompDew';
-// import CardContDew from './containers/CardContDew';
+import CardContDew from './containers/CardContDew';
 
   
 // const mapStateToProps = (state) => {
@@ -20,7 +20,7 @@ import TableCompDew from './components/TableCompDew';
 // console.log("wadudu",mapStateToProps);
 
 import { Card, Button, CardTitle, CardText } from 'reactstrap';
-import { getCovidsList } from '../actions';
+import { getCovidsList,getCovidIndo,getCovidPositif,getCovidSembuh } from '../actions';
 
 
  
@@ -28,10 +28,10 @@ class Kasus extends Component {
    
   componentDidMount(){
     this.props.dispatch(getCovidsList());
-    // this.props.dispatch(getCovidIndo());
-    // this.props.dispatch(getCovidPositif())
-    // this.props.dispatch(getCovidSembuh())
-    console.log("List covid",this.props.dispatch(getCovidsList()));
+    this.props.dispatch(getCovidIndo());
+    this.props.dispatch(getCovidPositif())
+    this.props.dispatch(getCovidSembuh())
+    console.log("covid sembuh",this.props.dispatch(getCovidSembuh()));
  } 
   render() {
     return (
@@ -48,7 +48,7 @@ class Kasus extends Component {
             </Card>
             </div>
           </div> */}
-          {/* <CardContDew/> */}
+          <CardContDew/>
 
         </div>
  

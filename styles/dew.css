@@ -84,9 +84,42 @@ p#id{
 }
 
 
+.bawahContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  top: 200px;
+  /* background: red; */
+}
+ 
+.bawah{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  cursor: pointer;
+  /* top: 590px; */
+  background: #5DA2D5;
+  box-shadow: -4.26875px -4.26875px 14.2292px #70B8EE, 2.13438px 2.13438px 14.2292px #557C8C;
+  border-radius: 28.4583px;
+}
+ 
+#setting{
+  /* left: 41.26px; */
+}
 
+#logout{
+  /* left: 136.6px; */
+}
 
-
+img.imgBawah{
+  width: 40px;
+}
 
 
 

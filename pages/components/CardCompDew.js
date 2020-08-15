@@ -1,7 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-// import Logo from "./icon.png";
 import { Card, Button, CardTitle, CardText } from 'reactstrap';
 
 const CardCompDew = (props) => {
