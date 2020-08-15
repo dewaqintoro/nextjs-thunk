@@ -1,5 +1,5 @@
 import * as types from './types'
-  
+import axios from 'axios'  
 // INITIALIZES CLOCK ON SERVER
 export const serverRenderClock = () => (dispatch) =>
   dispatch({

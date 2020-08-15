@@ -4,7 +4,6 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import { connect } from 'react-redux';
-import TableScrollbar from 'react-table-scrollbar';
  
 
 const { SearchBar } = Search;
