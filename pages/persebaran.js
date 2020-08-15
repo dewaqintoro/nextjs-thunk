@@ -11,10 +11,9 @@ import { Layout, Menu } from 'antd';
 const { Header, Content, Footer, Sider } = Layout;
 import SideCompDew from './components/SideCompDew';
 
-
+import numeral from "numeral";
 import { InfoBoxku } from './components/infoBox';
 import Tableku from './components/Table';
-import { sortData,prettyPrintStat } from './util';
 import LineGraph from './components/LineGraph';
 
 const persebaranDew = () => {
@@ -26,6 +25,16 @@ const persebaranDew = () => {
   const [casesType, setCasesType] = useState("cases");
   const [mapCenter, setMapCenter] = useState({ lat: 34.80746, lng: -40.4796 });
   const [mapZoom, setMapZoom] = useState(3);
+
+
+const prettyPrintStat = (stat) =>
+  stat ? `+${numeral(stat).format("0.0a")}` : "+0";
+
+const sortData = (data) => {
+    const sortedData = [...data];
+    return sortedData.sort((a,b) => (a.cases > b.cases ? -1 : 1))
+  }
+  
 
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/all")
