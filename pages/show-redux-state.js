@@ -11,6 +11,7 @@ const codeStyle = {
 
 const ShowReduxState = () => {
   const state = useSelector((state) => state)
+  console.log("ini state",state);
 
   return (
     <>

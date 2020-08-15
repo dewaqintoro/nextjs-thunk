@@ -4,6 +4,9 @@ import Link from 'next/link'
 import { startClock } from '../actions'
 import Examples from '../components/examples'
 
+import LoginDew from './login';
+
+
 const Index = () => {
   const dispatch = useDispatch()
   useEffect(() => {
@@ -11,12 +14,15 @@ const Index = () => {
   }, [dispatch])
 
   return (
-    <>
-      <Examples />
-      <Link href="/show-redux-state">
-        <a>Click to see current Redux State</a>
-      </Link>
-    </>
+    // <>
+    //   <Examples />
+    //   <Link href="/show-redux-state">
+    //     <a>Click to see current Redux State</a>
+    //   </Link>
+    // </>
+    <div className="loginku">
+      <LoginDew/>
+    </div>
   )
 }
 

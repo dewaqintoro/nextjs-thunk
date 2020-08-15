@@ -34,10 +34,40 @@ const timerReducer = (state = initialTimerState, { type, payload }) => {
   }
 }
 
+let initialState = {
+  title: "dewa",
+  getCovidsList:false,
+  getCovidIndo:false,
+  getCovidPositif:false,
+  getCovidSembuh:false,
+
+  errorCovidsList: false,
+  errorCovidIndo:false,
+  errorCovidPositif:false ,
+  errorCovidSembuh:false ,
+
+}
+
+const covidsReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case types.GET_COVIDS_LIST:
+      return{
+        ...state,
+        getCovidsList: action.payload.data,
+        errorCovidsList: action.payload.errorMessage
+      }
+
+
+    default:
+      return state
+  }
+}
+
 // COMBINED REDUCERS
 const reducers = {
   counter: counterReducer,
   timer: timerReducer,
+  covids: covidsReducer,
 }
 
 export default combineReducers(reducers)
