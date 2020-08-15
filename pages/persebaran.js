@@ -13,7 +13,6 @@ import SideCompDew from './components/SideCompDew';
 
 import numeral from "numeral";
 import InfoBoxku from './components/infoBox';
-import Tableku from './components/Table';
 import LineGraph from './components/LineGraph';
 
 const persebaranDew = () => {
@@ -148,7 +147,6 @@ const sortData = (data) => {
               <Card className="app__right">
               <CardContent>
                 <h3>Kasus Berdasarkan Negara</h3>
-                <Tableku countries={tableData}/>
                   <h3 className="app__graphTitle">{casesType}</h3>
                 <LineGraph className="app__graph" casesType={casesType}/>
               </CardContent>
