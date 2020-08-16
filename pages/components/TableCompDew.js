@@ -19,13 +19,16 @@ const columns = [{
   sort: true
 }, {
   dataField: 'attributes.Kasus_Posi',
-  text: 'Positif'
+  text: 'Positif',
+  sort: true
 }, {
   dataField: 'attributes.Kasus_Semb',
-  text: 'Sembuh'
+  text: 'Sembuh',
+  sort: true
 }, {
   dataField: 'attributes.Kasus_Meni',
-  text: 'Meninggal'
+  text: 'Meninggal',
+  sort: true
 }
 ];
  
