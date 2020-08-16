@@ -97,7 +97,7 @@ const sortData = (data) => {
       <SideCompDew aktif="2"/>
       <Layout>
         <Content style={{ margin: '24px 16px 0' }}>
-          <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+          <div className="site-layout-background" style={{ padding: 24, minHeight: 760 }}>
             <div className="app">
               <div className="app__left">
                 <div Name="app__header">
@@ -146,7 +146,7 @@ const sortData = (data) => {
 
               <Card className="app__right">
               <CardContent>
-                <h3>Kasus Berdasarkan Negara</h3>
+                <h3>Pertumbuhan kasus</h3>
                   <h3 className="app__graphTitle">{casesType}</h3>
                 <LineGraph className="app__graph" casesType={casesType}/>
               </CardContent>

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import CardCompDew from '../components/CardCompDew'
 import { Card, Button, CardTitle, CardText } from 'reactstrap';
-// import CardIndo from '../components/CardIndo';
+import CardIndo from '../components/CardIndo';
  
 
 const mapStateToProps = (state) =>{
@@ -24,7 +24,7 @@ class CardContDew extends Component {
     // console.log("wadudu positif",positif)
     return (
       <> 
-        {/* <CardIndo id="idIndo" ikon="https://res.cloudinary.com/dewaqintoro/image/upload/v1596616012/icon/sad_mblguq.png"/>  */}
+        <CardIndo id="idIndo" ikon="https://res.cloudinary.com/dewaqintoro/image/upload/v1596616012/icon/sad_mblguq.png"/> 
         <CardCompDew id="idPositif" headKasus="Positif" jumlahKasus={positif.value} ikon="https://res.cloudinary.com/dewaqintoro/image/upload/v1596616012/icon/sad_mblguq.png"/>
         <CardCompDew id="idSembuh" headKasus="Sembuh" jumlahKasus={sembuh.value} ikon="https://res.cloudinary.com/dewaqintoro/image/upload/v1596616012/icon/happy_vg0enk.png"/>
         <CardCompDew id="idMeninggal" headKasus="Meninggal" jumlahKasus="701,085" ikon="https://res.cloudinary.com/dewaqintoro/image/upload/v1596616012/icon/sad2_ggbjgz.png"/>
