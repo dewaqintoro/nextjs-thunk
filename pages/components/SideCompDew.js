@@ -40,12 +40,12 @@ const SideCompDew = (props) => {
                 Persebaran
               </Link>
             </Menu.Item>
-            <Menu.Item key="3" icon={<UploadOutlined />}>
+            {/* <Menu.Item key="3" icon={<UploadOutlined />}>
               nav 3 
             </Menu.Item>
             <Menu.Item key="4" icon={<UserOutlined />}>
               nav 4
-            </Menu.Item>
+            </Menu.Item> */}
             <div className="bawahContainer">
             <Link href="/setting">
               <div className="bawah" id="setting">
