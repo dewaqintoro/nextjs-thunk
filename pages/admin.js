@@ -16,7 +16,7 @@ class AdminPage extends Component {
         <SideCompDew aktif="1"/>
         <Layout>
           <Content style={{ margin: '24px 16px 0' }}>
-            <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+            <div className="site-layout-background" style={{ padding: 24, minHeight: 760 }}>
               <Kasus/>
               {/* <h1>Admin Page</h1>
               <div className="adminPage">
