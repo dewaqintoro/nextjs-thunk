@@ -1,17 +1,11 @@
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import Link from 'next/link'
-import { startClock } from '../actions'
-import Examples from '../components/examples'
 
 import LoginDew from './login';
 
 
 const Index = () => {
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(startClock())
-  }, [dispatch])
 
   // useEffect(() => {
   //   console.log('window.innerHeight', window.innerHeight);
